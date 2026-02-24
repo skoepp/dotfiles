@@ -29,16 +29,12 @@ git clone https://github.com/rupa/z.git ~/code/z
 # z is hooked up in .bash_profile
 
 # Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Homebrew is used in .aliases
 
 # Homebrew packages
 brew install coreutils node
 # coreutils, node and npm are used in .aliases
-
-# Homebrew-Cask taps
-brew tap caskroom/cask
-# brew cask is used in .aliases
 
 # Global npm packages
 npm -g install npm-check
