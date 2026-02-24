@@ -32,9 +32,8 @@ git clone https://github.com/rupa/z.git ~/code/z
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Homebrew is used in .aliases
 
-# Homebrew packages
-brew install coreutils node
-# coreutils, node and npm are used in .aliases
+# Homebrew packages (install from Brewfile in this repo)
+brew bundle
 
 # Global npm packages
 npm -g install npm-check

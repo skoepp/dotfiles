@@ -1,4 +1,4 @@
-# Homeprew inplementation - requires the installation of Homebrew - see https://brew.sh/
+# Homebrew implementation - requires the installation of Homebrew - see https://brew.sh/
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Load dotfiles like ~/.aliases, etc…
