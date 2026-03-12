@@ -5,22 +5,6 @@
 
 
 ##############################################################################################################
-###  backup old machine's key items
-
-mkdir -p ~/migration/home
-
-cp ~/.bashrc ~/migration/home
-cp ~/.bash_profile ~/migration/home
-
-cp ~/.extra ~/migration/home
-cp ~/.z ~/migration/home
-
-cp ~/.gitconfig ~/migration/home
-
-###
-##############################################################################################################
-
-##############################################################################################################
 ### install of common things
 ###
 
@@ -30,7 +14,6 @@ git clone https://github.com/rupa/z.git ~/code/z
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Homebrew is used in .aliases
 
 # Homebrew packages (install from Brewfile in this repo)
 brew bundle

@@ -1,5 +1,5 @@
-# Homebrew implementation - requires the installation of Homebrew - see https://brew.sh/
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Homebrew — requires the installation of Homebrew - see https://brew.sh/
+[ -r "$HOME/.homebrew_env" ] && source "$HOME/.homebrew_env"
 
 # Load dotfiles like ~/.aliases, etc…
 #   ~/.extra can be used for settings you don’t want to commit
