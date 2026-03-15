@@ -17,6 +17,3 @@ alias lsd='ls -l | grep "^d"'
 if type brew > /dev/null 2>&1; then alias brew_update="brew -v update; brew upgrade; brew cleanup; brew doctor;"; fi;
 if type npm-check > /dev/null 2>&1; then alias npm_update_global="npm-check -g -u"; fi;
 if type gem > /dev/null 2>&1; then alias gem_update="sudo gem update --system"; fi;
-
-# Ollama
-alias ollama='/opt/homebrew/opt/ollama/bin/ollama'

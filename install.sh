@@ -10,16 +10,15 @@ PLATFORM_CHOICE_FILE="$BACKUP_DIR/.platform_choice"
 HOMEBREW_ENV_FILE="$HOME/.homebrew_env"
 
 # Dotfiles shared by both shells
-SHARED_FILES=".aliases .dircolors .exports .gitattributes .gitconfig .gitignore .profile .vimrc .zshenv"
+SHARED_FILES=".aliases .dircolors .exports .gitattributes .gitconfig .gitignore .profile .vimrc"
 
 # Shell-specific dotfiles
-ZSH_FILES=".zprofile .zshrc"
+ZSH_FILES=".zprofile .zshrc .zshenv"
 BASH_FILES=".bash_profile .bashrc"
 
 # Homebrew paths per platform
 BREW_PATH_APPLE="/opt/homebrew/bin/brew"
 BREW_PATH_INTEL="/usr/local/bin/brew"
-BREW_PATH_LINUX="/home/linuxbrew/.linuxbrew/bin/brew"
 
 # --- Helper functions ---
 
@@ -122,9 +121,8 @@ do_install() {
     echo "Select your platform:"
     echo "  1) macOS (Apple Silicon)"
     echo "  2) macOS (Intel)"
-    echo "  3) Linux"
     echo ""
-    printf "Choose [1-3]: "
+    printf "Choose [1-2]: "
     read -r platform_input
 
     local brew_path
@@ -132,7 +130,6 @@ do_install() {
     case "$platform_input" in
         1) brew_path="$BREW_PATH_APPLE"; platform_name="macOS (Apple Silicon)" ;;
         2) brew_path="$BREW_PATH_INTEL"; platform_name="macOS (Intel)" ;;
-        3) brew_path="$BREW_PATH_LINUX"; platform_name="Linux" ;;
         *)
             echo "Invalid choice."
             return

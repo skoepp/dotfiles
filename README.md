@@ -1,7 +1,7 @@
 ## DOTFILES
 Everything starts with configuring your development environment.
 
-Dot files play a role when setting up your macOS or Linux system. This repository contains shell configurations, aliases, git settings, and an interactive installer to get everything in place.
+Dot files play a role when setting up your macOS system. This repository contains shell configurations, aliases, git settings, and an interactive installer to get everything in place.
 
 ### Setup
 
@@ -28,7 +28,7 @@ Run the interactive installer to back up your existing dotfiles and create symli
 
 The installer will:
 - Ask you to choose between Zsh or Bash
-- Ask for your platform (Apple Silicon, Intel, or Linux)
+- Ask for your platform (Apple Silicon or Intel)
 - Back up your original dotfiles on first run
 - Generate `~/.homebrew_env` with the correct Homebrew path for your platform
 - Create symlinks to your home directory
